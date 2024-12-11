@@ -1,0 +1,51 @@
+.header {
+    background-color: white; 
+    padding: 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.logo {
+    font-size : 24px;
+    font-weight: bold;
+}
+
+.icons-left, .icons-right {
+    display: flex;
+    align-items: center;
+}
+
+
+.icons-right, .icon {
+    margin-left: 10px; 
+    cursor: pointer; 
+}
+
+#ham-icon {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
+
+    #main-icon {
+        display: none;
+    }
+
+    #ham-icon {
+        display: inline;
+    }
+
+    .icons-right {
+        margin-left: auto; 
+    }
+
+    .icon {
+        margin: 0 8px; 
+    }
+}
